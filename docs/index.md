@@ -1,16 +1,16 @@
 # Abstract
 
-Provide a brief overview of the project objhectives, approach, and results.
+This 209AS project is about "Missing Data Imputation In Time Series".
 
 # Team
 
-* Name of team member \#1 
-* Name of team member \#2 (delete this if necessary)
-* Name of team member \#3 (delete this if necessary)
+* Shenghui Xu \#1 
+* Lei Wang \#2
+* Yuji Gao \#3
 
 # Required Submissions
 
-* [Proposal](proposal)
+* [Proposal](https://github.com/umiao/ece209as_project/blob/main/docs/proposal.md)
 * [Midterm Checkpoint Presentation Slides](http://)
 * [Final Presentation Slides](http://)
 * [Final Report](report)
