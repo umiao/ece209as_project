@@ -21,7 +21,11 @@ At first, we want to introduce some traditional methods:
 
 The above traditional methods rarely take the temporal relations among the observations and treat the time series as normal structured data, thus losing the information from the time data. So far, deep learning based methods have been applied to multivatiable time series imputation and show positive progress in imputing the missing data. Most of them adopt or combine the idea of RNN, GRU and GAN:
 
-* **GRU-D**
+* **GRU-D** is proposed as one of the early attempts to impute time series with deep learning models. It is also the first research to exploit that, RNN can model multivariable time series with the informativeness from the time series since former works attempted to impute missing values with RNN by concatenating timestamps and raw data, which means they regard timestamps as one attribute of raw data. It first the concept of time lag. It also adopts the gated recurrent unit to generate missing values called GRU-D and proposes the concept of decay rate.
+* **M-RNN & BRITS** both impute missing values according to hidden states from bidirectional RNN. However, M-RNN treats missing values as constants, while BRITS treats missing values as variables of the RNN graph. Furthermore, BRITS takes correlations among feathers into consideration while M-RNN doesn’t.
+* **GRU-I** follows the structure of GRU-D with the removal of the input decay. So, there is no innovation in the RNN part as well as the decay rate. The GAN structure is made up of a generator (G) and a discriminator (D). Both G and D are based on GRU-I, and it takes lots of time to train the model to get the data imputed. However, this model is not practical since the accuracy of the generative model seems not stable with a random noise input. And it also makes the model hard to converge.
+* **E<sup>2</sup>GAN** adopts an auto-encoder structure based on GRU-I to form the generator instead of taking a random noise vector as inputs like GRU-I, though this tackles the difficulty of training the model.
+
 
 ## 3. Novelty & Rationale
 
@@ -81,6 +85,6 @@ List references correspondign to citations in your text above. For papers please
 
 [8] Ma, Jiawei, et al. "CDSA: cross-dimensional self-attention for multivariate, geo-tagged time series imputation." arXiv preprint arXiv:1905.09904 (2019).
 
-[9] NRTSI Non-Recurrent Time Series Imputation
+[9] Shan, Siyuan, Yang Li, and Junier B. Oliva. "NRTSI: Non-Recurrent Time Series Imputation." arXiv preprint arXiv:2102.03340 (2021).
 
 
