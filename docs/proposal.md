@@ -4,7 +4,7 @@
 
 Time series are ubiquitous in real-world applications. Unfortunately, many unexpected accidents will cause missing values of data, such as irregular observations, software crash, communication outage, energy availability, power management, privacy and other human factors and so on. However, missing data often provide rich information and some missing rate can reach 90% in some datasets, which makes the data difficult to be utilized and exploited. This also hurts the downstream applications such as traditional classification or regression, sequential data integration and forecasting tasks, thus raising the demand for data imputation. 
 
-In this project, we will try to apply the self-attention mechanism to this problem and compare the performance to the traditional methods and other deep learning methods such as RNN, GRU and GAN.
+In this project, we will compare the performance of different typical methods under different conditions of missing values using different types of datasets, also we will try to apply the self-attention mechanism to this problem and compare the performance to the traditional methods and other deep learning methods such as RNN, GRU and GAN.
 
 ## 2. State of the Art & Its Limitations
 
