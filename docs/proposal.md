@@ -34,11 +34,19 @@ Finally we introduce some self-attention based methods:
 
 ## 3. Novelty & Rationale
 
-What is new in your approach and why do you think it will be successful?
+To the best of our knowledge, we are the first to comprehensively research and analyze all these methods (both traditional and learning based) mentioned above. Besides, we decide to implement representatives of these methods for fair comparison, which is rare among the existing work (which heavily relies on the original author's self-reported attributes and performance). We decide to make up the gap of open-sourced and quantitative analysis across multiple imputation methods. We also introduce datasets from multiple sources and domains, to discuss the differences among various application scenarios while evaluating models' robustness and generalization ability.
 
 ## 4. Potential Impact
 
-If the project is successful, what difference will it make, both technically and broadly?
+Transformer and self-attention related theory and techniques have been widely applied in fields like NLP and CV. At the same time,
+it seems to be viewed as some sort of panacea which can always improve the performance with higher model complexity. We are interested 
+about this topic and we would like to evaluate such opinion with fair and comprehensive comparative experiments.
+By this manner, we want to either conclude a SOTA paradigm in the very task of data imputation, or figure out the deficiencies
+of some existing work's conclusions as they are more or less built on incomplete induction and comparison.
+
+Another potential impact lies in the contribution to the open-source community.
+With this project , we hope to make up the lack of missing data imputation opensource framework and toolkits, which can definitely
+benefits the related researches.
 
 ## 5. Challenges
 
