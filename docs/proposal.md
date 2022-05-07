@@ -50,7 +50,7 @@ First, we have to classify the datasets we will use, the patterns of missing dat
 
 ## 7. Metrics of Success
 
-What are metrics by which you would check for success?
+Use classification/prediction to evaluate the models. The main metric is AUC score.
 
 ## 8. Execution Plan
 
@@ -75,8 +75,8 @@ In the preparation phase, the three of us divided the work to complete the datas
 We have listed all used datasets from the above papers and picked typical three of them:
 
 * **PhysioNet Challenge 2012 dataset (PhysioNet)<sup>[13]</sup>:** The PhysioNet 2012 challenge dataset contains 12,000 multivariate clinical time-series samples collected from patients in ICU (Intensive Care Unit). Each sample is recorded during the first 48 hours after admission to the ICU. Depending on the status of patients, there are up to 37 time-series variables measured, for instance, temperature, heart rate, blood pressure. Measurements might be collected at regular intervals (hourly or daily), and also may be recorded at irregular intervals (only collected as required). Not all variables are available in all samples. Note that this dataset is very sparse and has 80% missing values in total. 
-* **Beijing Multi-Site Air Quality<sup>[14]</sup>:** This air-quality dataset includes hourly air pollutants data from 12 monitoring sites in Beijing. Data is collected from 2013/03/01 to 2017/02/28 (48 months in total). For each monitoring site, there are 11 continuous time series variables measured (e.g. PM2.5, PM10, SO2). We aggregate variables from 12 sites together so this dataset has 132 features. There are a total of 1.6% missing values in this dataset.
-* **Electricity Load Diagrams<sup>[15]</sup>:** This is another widely-used public dataset from UCI. It contains electricity consumption data (in kWh) collected from 370 clients every 15 minutes and has no missing data. The period of this dataset is from 2011/01/01 to 2014/12/31 (48 months in total). Similar to processing Air-Quality,
+* **Beijing Multi-Site Air Quality<sup>[14]</sup>:** This air-quality dataset [54] includes hourly air pollutants data from 12 monitoring sites in Beijing. Data is collected from 2013/03/01 to 2017/02/28 (48 months in total). For each monitoring site, there are 11 continuous time series variables measured (e.g. PM2.5, PM10, SO2). We aggregate variables from 12 sites together so this dataset has 132 features. There are a total of 1.6% missing values in this dataset.
+* **Electricity Load Diagrams<sup>[15]</sup>:** This is another widely-used public dataset from UCI [55]. It contains electricity consumption data (in kWh) collected from 370 clients every 15 minutes and has no missing data. The period of this dataset is from 2011/01/01 to 2014/12/31 (48 months in total). Similar to processing Air-Quality,
 
 ### 9.c. Software
 
