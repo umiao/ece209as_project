@@ -42,7 +42,7 @@ If the project is successful, what difference will it make, both technically and
 
 ## 5. Challenges
 
-What are the challenges and risks?
+Whether the dataset can be processed correctly, whether those previous classical models can be implemented correctly, and whether the performance under the same dataset will be significantly different from the past. Whether the design of the different missing patterns is reasonable and whether a reasonable and meaningful downstream task can be found for each different dataset to evaluate the data imputation performance.
 
 ## 6. Requirements for Success
 
