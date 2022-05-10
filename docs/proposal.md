@@ -112,14 +112,32 @@ List references correspondign to citations in your text above. For papers please
 
 [9] Lipton, Zachary C., David C. Kale, and Randall Wetzel. "Modeling missing data in clinical time series with rnns." Machine Learning for Healthcare 56 (2016).
 
-[10] Du, Wenjie, David Côté, and Yan Liu. "SAITS: Self-Attention-based Imputation for Time Series." arXiv preprint arXiv:2202.08516 (2022).
+[10] Zerveas, George, et al. "A transformer-based framework for multivariate time series representation learning." Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery & Data Mining. 2021.
 
-[11] Zerveas, George, et al. "A transformer-based framework for multivariate time series representation learning." Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery & Data Mining. 2021.
+[11] A. Goldberger, L. Amaral, L. Glass, Jeffrey M. Hausdorff, P. Ivanov, R. Mark, J. Mietus, G. Moody, C. Peng, and H. Stanley. Physiobank, physiotoolkit, and physionet: components of a new research resource for complex physiologic signals. Circulation, 101 23:E215–20, 2000.
 
-[12] A. Goldberger, L. Amaral, L. Glass, Jeffrey M. Hausdorff, P. Ivanov, R. Mark, J. Mietus, G. Moody, C. Peng, and H. Stanley. Physiobank, physiotoolkit, and physionet: components of a new research resource for complex physiologic signals. Circulation, 101 23:E215–20, 2000.
+[12] Shuyi Zhang, Bin Guo, Anlan Dong, Jing He, Ziping Xu, and S. Chen. Cautionary tales on air-quality improvement in beijing. Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences, 473, 2017.
 
-[13] Shuyi Zhang, Bin Guo, Anlan Dong, Jing He, Ziping Xu, and S. Chen. Cautionary tales on air-quality improvement in beijing. Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences, 473, 2017.
+[13] Dheeru Dua and Casey Graff. UCI machine learning repository, 2017.
 
-[14] Dheeru Dua and Casey Graff. UCI machine learning repository, 2017.
+[14] [Li, Yuebiao, Zhiheng Li, and Li Li]”Missing traffic data: comparison of imputation methods.” IET Intelligent Transport Systems 8.1 (2014): 51-57.
+
+[15] [Ahmed, Mohammed S., and Allen R. Cook]Analysis of freeway traffic time-series data by using Box-Jenkins techniques. No. 722. 1979.
+
+[16] [Ueda, Naonori, et al.] “Split and merge EM algorithm for improving Gaussian mixture density estimates.” Journal of VLSI signal processing systems for signal, image and video technology 26.1 (2000): 133-140.
+
+[17] [Troyanskaya, Olga, et al.] “Missing value estimation methods for DNA microarrays.” Bioinformatics 17.6 (2001): 520-525.
+
+[18] [Kim, Hyunsoo, Gene H. Golub, and Haesun Park.] “Missing value estimation for DNA microarray gene expression data: local least squares imputation.” Bioinformatics 21.2 (2005): 187-198.
+
+[19] [Ni, D., Leonard II, J.D.] “Markov chain Monte Carlo multiple imputation using Bayesian networks for incomplete intelligent transportation systems data”, Transp. Res. Rec., 2005, 1935, (1), pp. 57–67
+
+[20] [Gilks, W.R., Richardson, S., Spiegelhalter, D.J.]”Markov chain Monte Carlo in practice” (Chapman & Hall, London, 1996)
+
+[21] [Tipping, M.E., Bishop, C.M.]”Mixtures of probabilistic principalcomponent analyzers”, Neural Comput., 1999, 11, (2), pp. 443–482
+
+[22] [Lima, Juan-Fernando, Patricia Ortega-Chasi, and Marcos Orellana Cordero]”A novel approach to detect missing values patterns in time series data.” Conference on Information Technologies and Communication of Ecuador. Springer, Cham, 2019.
+
+[23] [Dong, Y., Peng, C.Y.J.]Principled missing data methods for researchers. Springer-Plus 2(1), 222 (2013).
 
 
