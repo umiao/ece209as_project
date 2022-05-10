@@ -13,6 +13,6 @@ Time series are ubiquitous in real world. However, unexpected events, such as br
 # Required Submissions
 
 * [Proposal](https://github.com/umiao/ece209as_project/blob/main/docs/proposal.md)
-* [Midterm Checkpoint Presentation Slides](https://docs.google.com/presentation/d/1QTF7KPEaG2rPQ6Qu5mX28DdiQkV5POd/edit#slide=id.p1)
+* [Midterm Checkpoint Presentation Slides](https://docs.google.com/presentation/d/1QTF7KPEaG2-rPQ6Qu5mX28DdiQkV5POd/edit?usp=sharing&ouid=117013027302320005249&rtpof=true&sd=true)
 * [Final Presentation Slides](http://)
 * [Final Report](report)
