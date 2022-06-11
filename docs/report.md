@@ -70,8 +70,28 @@ Finally we introduce some self-attention based methods:
 ### Limits
 
 All these above SOTA models we mentioned don't consider the case of the lack of training data. For example, PhysioNet has a total of 80% missing values and is very sparse which means it's hard for us to find a true ground truth to train our imputation models. This will cause the bad performance of classification using the imputed data. All these methods need a plenty of training data and can't use other datasets to help.
+At the same time, these SOTA methods are specialized on certain datasets and lack ability of generalization.
+With higher complexity of model structure and representative ability, these models are vulnerable to overfitting.
+
+When it comes to the formulation and utilization of dataset, the implementation of many of the above works is biased. 
+This is becasue they generate fixed-length sequence in a non-overlapping manner. 
+If the total length of serial training data is $N$ and the desired sequence length is $n$, then the sliding stride would be exactly $n$.
+At the same time, only $\lfloor \frac{N}{n} \rfloor$ sequences can be generated as training data.
+It is highly possible that the model would learn some latent periodical pattern, rather than the pattern of trends and dynamics.
+*E.g.*, in the Physionet dataset, we only consider the $48$ hours of sensor data for each patient from the time they are sent to the hospital.
+If the starting time of sequence changes, the model would show a decrese of performance.
 
 ## Novelty & Rationale:
+1. In order to solve the shortage of training data from identical and independent distribution as the unknown sequence to be imputed, we propose a framework which extracts training data from different domains and scenarios.
+2. We propose and evaluate several encoder structures for feature selection from serial data.
+The encoder is trained under the End-to-End structure. That is to say, the input sequence is first mapped to a low-dimensional vector representative with the encoder and then mapped back to its original dimension (length) with a decoder.
+We require the decoded output to be similar to the original input as possible.
+3. We introduce clustering algorithm to accelerate the process of extraction of similar feature. 
+If we match the sequences in our data 'pool' (with the current sequence with missing values) in an one-by-one manner, we would face extremely high memory and computational overhead.
+In our experiments, the training set has scale of around 350K sequences. 
+With the encoder and clustering design, we reduce the cost of forming a training set from 350K encoding + comparison operations to 20 encoding + comparison operations (20 is the number of cluster centers).
+4. We explore different implementations of the imputation model to optimize the performance. 
+We also introduce downstream task with actual meaning to prove that imputation with higher quality helps in the downstream task, no matter the data missingness is introduced manually or by nature. 
 
 
 ## Potential Impact:
@@ -84,7 +104,10 @@ Another potential impact lies in the contribution to the open-source community. 
 
 ## Challenges:
 
-Whether the dataset can be processed correctly, whether those previous classical models can be implemented correctly, and whether the performance under the same dataset will be significantly different from the past. Whether the design of the different missing patterns is reasonable and whether a reasonable and meaningful downstream task can be found for each different dataset to evaluate the data imputation performance.
+- Whether the dataset can be processed correctly,
+- Whether those previous classical models can be implemented correctly.
+- Whether the performance under the same dataset will be significantly different from the past. 
+- Whether the design of the different missing patterns is reasonable and whether a reasonable and meaningful downstream task can be found for each different dataset to evaluate the data imputation performance.
 
 ## Requirements for Success:
 
@@ -111,7 +134,10 @@ We have listed all used datasets from the above papers and picked typical three 
 
 ### 2.c. Software
 
-* **Python**
+- **Python**
+
+    **Packages**: NNI (Neural Network Intelligence), PyTorch, PyH5 (For HDF5 file parsing), Matplotlib, Numpy, SklLearn
+    
 
 # 3. Technical Approach
 
