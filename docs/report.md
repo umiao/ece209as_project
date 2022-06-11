@@ -67,6 +67,10 @@ Finally we introduce some self-attention based methods:
 * **CDSA<sup>[8]</sup>** applies cross-dimensional self-attention jointly from three dimensions (time, location, and measurement) to impute missing values in spatiotemporal datasets. While it is specifically designed for spatiotemporal data rather than general time series.
 * **NRTSI<sup>[9]</sup>** treats time series as a set of tuples (time, data). Such a design makes NRTSI applicable to irregularly sampled time series. However, its algorithm design consists of two nested loops, which weaken the advantage of self-attention that is parallelly computational and make the model process slowly.
 
+### Limits
+
+All these above SOTA models we mentioned don't consider the case of the lack of training data. For example, PhysioNet has a total of 80% missing values and is very sparse which means it's hard for us to find a true ground truth to train our imputation models. This will cause the bad performance of classification using the imputed data. All these methods need a plenty of training data and can't use other datasets to help.
+
 ## Novelty & Rationale: What is new in your approach and why do you think it will be successful?
 
 
