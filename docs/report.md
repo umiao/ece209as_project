@@ -141,6 +141,18 @@ We have listed all used datasets from the above papers and picked typical three 
 
 # 3. Technical Approach
 
+## Encoder Model
+- Design a CNN1D–Based network
+- Use the L2 loss to reconstruct the input univariate data from electricity and air quality datasets
+- Save all the layers except the last output layer as an encoder model
+- By inputting the PhysioNet data, we can get its 4-dimension representation
+- 
+
+## K-means Clustering
+- Cluster 20 classes using data from the encoded electricity and air quality datasets
+- Find the top-3 nearest cluster centers of the encoded (low-dimensional) representation for each example of the PhysioNet dataset
+- By voting we choose the most matched 3 cluster classes and use the original data of them as the final training data for M-RNN & BRITS
+
 # 4. Evaluation and Results
 
 ## Experiment Setting
@@ -153,11 +165,11 @@ We have listed all used datasets from the above papers and picked typical three 
 | PhysioNet | ROC AUC | PR AUC | F1 Score | Time Consumption | Early Stop |
 | :---:| :---: | :---: | :---: | :---: | :---: |
 | M-RNN (w/o) | 0.822 | 0.463 | 0.303 | - | - |
-| M-RNN (w/o) | 0.822 | 0.463 | 0.303 | - | - |
-| M-RNN (w/o) | 0.822 | 0.463 | 0.303 | - | - |
-| M-RNN (w/o) | 0.822 | 0.463 | 0.303 | - | - |
-| M-RNN (w/o) | 0.822 | 0.463 | 0.303 | - | - |
-| M-RNN (w/o) | 0.822 | 0.463 | 0.303 | - | - |
+| M-RNN (random) | 0.824 | 0.493 | 0.419 | ~1.5 h | 5 |
+| M-RNN (encoder) | 0.830 | 0.486 | 0.426 | ~1 h | 30 |
+| BRITS (w/o) | 0.819 | 0.461 | 0.359 | - | - |
+| BRITS (random) | 0.840 | 0.514 | 0.405 | ~1.3 h | 5 |
+| BRITS (encoder) | 0.844 | 0.525 | 0.413 | ~1.2 h | 30 |
 
 # 5. Discussion and Conclusions
 
