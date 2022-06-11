@@ -119,6 +119,22 @@ We have listed all used datasets from the above papers and picked typical three 
 
 # 5. Discussion and Conclusions
 
+## Future Work
+Aside from the framework and experimental design discussed above, there are also serval interesting topics to be discussed.
+1. **Generalization**: In our report, the meta-learning's 'pool' of data only contains two independent datasets, *i.e.*, Beijing Air Quality and Electricity Usage datasets.
+The influence of adding more datasets into this 'pool' is to be discovered. Also, more datasets should be applied to test the generalization ability of this framework.
+
+    At the same time, we processed the serial data by dividing it into fixed-length sequence so that encoder models based on CNN, RNN, Transformer and linear model are all applicable.
+    The missing data is filled with median of the entire sequence as the encoder requires dense sequence.
+    However, if the serial data is very sparse (and intervals between non-missing values are very large), the above assumption would not work.
+    In this case, input described by quasi **run-length encoding** may be required.
+    
+2. **Model Design**:
+    For now, the idea of encoder is to change the input sequence into a low-dimensional vector representative which is able to recover the original input sequence.
+    Such design only assures the vector representative contains all the information of input, but it may not be the best way to discriminate similar sequences.
+    We may design a metric based learning, and maybe we can manually label some of the data and use learning based method to estimate the distance of two sequences (rather than the trival **Euclidean Distance**).    
+    With this manner, we can quantize the similarity between sequences, rather than based on a heuristic method (*e.g.*, clustering like KNN).
+
 # 6. References
 
 [1] Che, Zhengping, et al. "Recurrent neural networks for multivariate time series with missing values." Scientific reports 8.1 (2018): 1-12.
