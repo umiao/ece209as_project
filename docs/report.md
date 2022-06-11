@@ -143,6 +143,18 @@ We have listed all used datasets from the above papers and picked typical three 
 
 # 4. Evaluation and Results
 
+## Experiment Setting
+- Baseline 1 (w/o): Directly split the PhysioNet data into the training and testing data of the imputation models   
+- Baseline 2 (random): Randomly select the same number of examples as our method from the other unrelated datasets
+- Ours (encoder): Select the training data by our encoding and clustering algorithm
+- Evaluation: classification accuracy, time consumption
+
+## Experiment Result
+| 左对齐 | 右对齐 | 居中对齐 |
+| :-----| ----: | :----: |
+| 单元格 | 单元格 | 单元格 |
+| 单元格 | 单元格 | 单元格 |
+
 # 5. Discussion and Conclusions
 
 ## Strength
