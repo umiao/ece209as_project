@@ -9,7 +9,12 @@
 
 # Abstract
 
-Provide a brief overview of the project objhectives, approach, and results.
+In this project, we developed a self-adaptive serial data imputation framework. We designed and evaluated encoder structures which are cacpable of extracting the pattern of serial data whose distribution is unknown.
+At the same time, we maintain a dataset with serial data from multiple domains, extracting each data's feature and assign them into non-overlapping subsets with cluster algorithm.
+Whenever we encounter sequence with missing values, we would extract the pattern of the current sequence and compare with the cluster centers to pick the most relevant clusters. 
+Then, selected subsets would be merged into one training set for learning of missing data imputation model.
+We proved that the inner pattern of known serial data is sufficient of imputation model training, regardless of its actual meaning.
+Our experimental results showed that our framework even beated imputation model trained with data having identical distribution as the testing set, without domain knowledge and significantly improved the performance of corresponding downstream task.
 
 # 1. Introduction
 
