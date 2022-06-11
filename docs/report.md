@@ -20,7 +20,7 @@ Our experimental results showed that our framework even beated imputation model 
 
 
 
-## Motivation & Objective: What are you trying to do and why? (plain English without jargon)
+## Motivation & Objective: What are you trying to do and why? 
 
 With the development of Internet and Internet of Things, large amounts of data is produced every moment with high speed and the processing and utilization of serial data has become an important and hot topic. 
 
@@ -30,6 +30,8 @@ In both of the two scenarios, imputation of missing data is believed to have pos
 During the pursuing of more accurate data imputation methods, learning based methods have become the mainstream. However, such methods also come with shortcomings like requirement of high volume data and high training cost and latency.
 In fact, the shortage of training data is an especially critical challenge, as it is impossible for us to know the true values of the values which are already missing, and in some cases, such true values never exist. 
 Also, we may face the so called **cold start** issue, which requires us to start inference and imputation immediately without available training data. 
+**Curse of dimension** points out that irrelevant and low-quality training data would impair the model's performance while increasing the overhead of training.
+Thus, it is also important to adopt training data with high-quality and relevance.
 
 In order to solve such challenges, we decide to propose a meta-learning framework for serial datat imputation. 
 Meta-Learning is also known as learning-to-learning, which means that utilizing former knowledge to solve new tasks and is widely used in Few-shot and Zero-shot learning (machine learning with very few or zero training sample).
@@ -55,6 +57,27 @@ We believe that in this manner, we would be able to solve the lack of training d
 
 # 4. Evaluation and Results
 
+
+
+
+
 # 5. Discussion and Conclusions
+
+## Future Work
+Aside from the framework and experimental design discussed above, there are also serval interesting topics to be discussed.
+1. **Generalization**: In our report, the meta-learning's 'pool' of data only contains two independent datasets, *i.e.*, Beijing Air Quality and Electricity Usage datasets.
+The influence of adding more datasets into this 'pool' is to be discovered. Also, more datasets should be applied to test the generalization ability of this framework.
+
+    At the same time, we processed the serial data by dividing it into fixed-length sequence so that encoder models based on CNN, RNN, Transformer and linear model are all applicable.
+    The missing data is filled with median of the entire sequence as the encoder requires dense sequence.
+    However, if the serial data is very sparse (and intervals between non-missing values are very large), the above assumption would not work.
+    In this case, input described by quasi **run-length encoding** may be required.
+    
+2. **Model Design**:
+    For now, the idea of encoder is to change the input sequence into a low-dimensional vector representative which is able to recover the original input sequence.
+    Such design only assures the vector representative contains all the information of input, but it may not be the best way to discriminate similar sequences.
+    We may design a metric based learning, and maybe we can manually label some of the data and use learning based method to estimate the distance of two sequences (rather than the trival **Euclidean Distance**).    
+    With this manner, we can quantize the similarity between sequences, rather than based on a heuristic method (*e.g.*, clustering like KNN).
+
 
 # 6. References
