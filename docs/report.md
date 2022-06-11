@@ -147,7 +147,7 @@ We have listed all used datasets from the above papers and picked typical three 
 - Save all the layers except the last output layer as an encoder model
 - By inputting the PhysioNet data, we can get its 4-dimension representation
 
-![encoder](/media/encoder.png)
+![encoder](./media/encoder.png)
 
 ## K-means Clustering
 - Cluster 20 classes using data from the encoded electricity and air quality datasets
