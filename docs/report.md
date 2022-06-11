@@ -20,7 +20,7 @@ Our experimental results showed that our framework even beated imputation model 
 
 
 
-## Motivation & Objective: What are you trying to do and why? (plain English without jargon)
+## Motivation & Objective:
 
 With the development of Internet and Internet of Things, large amounts of data is produced every moment with high speed and the processing and utilization of serial data has become an important and hot topic. 
 
@@ -41,7 +41,7 @@ We believe that in this manner, we would be able to solve the lack of training d
 
 
 
-## State of the Art & Its Limitations: How is it done today, and what are the limits of current practice?
+## State of the Art & Its Limitations:
 
 At first, we want to introduce some traditional methods:
 
@@ -71,10 +71,10 @@ Finally we introduce some self-attention based methods:
 
 All these above SOTA models we mentioned don't consider the case of the lack of training data. For example, PhysioNet has a total of 80% missing values and is very sparse which means it's hard for us to find a true ground truth to train our imputation models. This will cause the bad performance of classification using the imputed data. All these methods need a plenty of training data and can't use other datasets to help.
 
-## Novelty & Rationale: What is new in your approach and why do you think it will be successful?
+## Novelty & Rationale:
 
 
-## Potential Impact: If the project is successful, what difference will it make, both technically and broadly?
+## Potential Impact:
 
 The most important impact is that we proposed an idea to solve the problem of lack of training data if the original data has too many missing values. We can provide a potential direction of figuring out the cold-start issue.
 
@@ -82,15 +82,15 @@ Then if our idea works, that means we don't need to know the actual meaning of t
 
 Another potential impact lies in the contribution to the open-source community. With this project , we hope to make up the lack of missing data imputation opensource framework and toolkits, which can definitely benefits the related researches.
 
-## Challenges: What are the challenges and risks?
+## Challenges:
 
 Whether the dataset can be processed correctly, whether those previous classical models can be implemented correctly, and whether the performance under the same dataset will be significantly different from the past. Whether the design of the different missing patterns is reasonable and whether a reasonable and meaningful downstream task can be found for each different dataset to evaluate the data imputation performance.
 
-## Requirements for Success: What skills and resources are necessary to perform the project?
+## Requirements for Success:
 
 First, we have to classify the datasets we will use, the patterns of missing data we will realize and the downstream tasks we will evaluate, which means we need to be able to read papers, collect information and work together well. Then we have to properly design an encoding, clustering and voting algorithm to realize our ideas.
 
-## Metrics of Success: What are metrics by which you would check for success?
+## Metrics of Success:
 
 Use classification/prediction to evaluate the models. The main metric is AUC score.
 
