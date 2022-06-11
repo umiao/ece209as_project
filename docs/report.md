@@ -150,10 +150,14 @@ We have listed all used datasets from the above papers and picked typical three 
 - Evaluation: classification accuracy, time consumption
 
 ## Experiment Result
-| 左对齐 | 右对齐 | 居中对齐 |
-| :-----| ----: | :----: |
-| 单元格 | 单元格 | 单元格 |
-| 单元格 | 单元格 | 单元格 |
+| PhysioNet | ROC AUC | PR AUC | F1 Score | Time Consumption | Early Stop |
+| :---:| :---: | :---: | :---: | :---: | :---: |
+| M-RNN (w/o) | 0.822 | 0.463 | 0.303 | - | - |
+| M-RNN (w/o) | 0.822 | 0.463 | 0.303 | - | - |
+| M-RNN (w/o) | 0.822 | 0.463 | 0.303 | - | - |
+| M-RNN (w/o) | 0.822 | 0.463 | 0.303 | - | - |
+| M-RNN (w/o) | 0.822 | 0.463 | 0.303 | - | - |
+| M-RNN (w/o) | 0.822 | 0.463 | 0.303 | - | - |
 
 # 5. Discussion and Conclusions
 
