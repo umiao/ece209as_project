@@ -153,6 +153,9 @@ We have listed all used datasets from the above papers and picked typical three 
 - Improve the downstream classification accuracy with imputation techniques.
 
 ## Weakness
+- Require data preprocessing including truncating and encoding in advance
+- Rely heavily on the performance of encoder
+- Current cluster method is trivial so far (based on Euclidean Distance)
 
 ## Future Work
 Aside from the framework and experimental design discussed above, there are also serval interesting topics to be discussed.
