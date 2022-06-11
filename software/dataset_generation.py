@@ -5,6 +5,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 import random
+sys.path.append('..')
 
 # Argument data structure used for argument calling. Support member operator.
 class Args(dict):
