@@ -145,6 +145,15 @@ We have listed all used datasets from the above papers and picked typical three 
 
 # 5. Discussion and Conclusions
 
+## Strength
+- Solve the shortage of high quality data. Support Zero-Knowledge learning.
+- Better utilize training data with sliding window.
+- Filter unrelated data and select high quality data using K-means cluster
+- Reduce overhead of computation. 
+- Improve the downstream classification accuracy with imputation techniques.
+
+## Weakness
+
 ## Future Work
 Aside from the framework and experimental design discussed above, there are also serval interesting topics to be discussed.
 1. **Generalization**: In our report, the meta-learning's 'pool' of data only contains two independent datasets, *i.e.*, Beijing Air Quality and Electricity Usage datasets.
