@@ -17,6 +17,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import torch
 from sklearn import metrics
+sys.path.append('..')
 
 class Args(dict):
     def __getattr__(self, name):
