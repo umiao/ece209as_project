@@ -11,10 +11,6 @@ import numpy as np
 import torch
 from sklearn import metrics
 
-np.random.seed(26)
-torch.manual_seed(26)
-
-
 class DataGetter(Dataset):
     def __init__(self, imputed_data, labels):
         self.imputed_data = imputed_data
