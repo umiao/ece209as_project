@@ -184,7 +184,7 @@ if __name__ == '__main__':
     root_dir = "" # the dir where you save your model and log
     original_dataset_path = ""# where you store original data
     imputed_dataset_path = ""#where you store the imputation result
-    seq_len = 48 #adjust according to the data
+    seq_len = 48 #adjust according to the datas
     feature_num = 37 # adjust according to imputation results
     rnn_hidden_size = 128
     epochs = 10000
