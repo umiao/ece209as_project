@@ -9,6 +9,9 @@ Use the folders as follows:
 
 You may add additional folders as necessary.
 
+**Imputation and Classification model codes reference:**
+
+[Du, Wenjie, David Côté, and Yan Liu. "SAITS: Self-Attention-based Imputation for Time Series." arXiv preprint arXiv:2202.08516 (2022).](https://github.com/WenjieDu/SAITS)
 
 **Classification.py Walking Through:**
 
