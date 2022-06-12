@@ -181,15 +181,15 @@ def auc_to_recall(recalls, precisions, recall=0.01):
 
 if __name__ == '__main__':
 
-    root_dir = "/content/drive/MyDrive/SAITS-master/RNN_training_result"
-    original_dataset_path = "/content/drive/MyDrive/SAITS-master/generated_datasets/physio2012_37feats_01masked/datasets.h5"
-    imputed_dataset_path = "/content/drive/MyDrive/SAITS-master/NIPS_results/PhysioNet2012_MRNN_best/step_2/imputations.h5"
-    seq_len = 48
-    feature_num = 37
+    root_dir = "" # the dir where you save your model and log
+    original_dataset_path = ""# where you store original data
+    imputed_dataset_path = ""#where you store the imputation result
+    seq_len = 48 #adjust according to the data
+    feature_num = 37 # adjust according to imputation results
     rnn_hidden_size = 128
-    epochs = 100
+    epochs = 10000
     lr = 0.001
-    saved_model_path = "/content/drive/MyDrive/SAITS-master/RNN_training_result/models/2022-06-11_T03:11:13/model_epoch_10_ROCAUC_0.8307"
+    saved_model_path = ""#only useful in test mode
     test_mode = True
     device = "cuda"
     if  test_mode:

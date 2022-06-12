@@ -1383,7 +1383,7 @@ def read_arguments(arg_parser, cfg_parser):
 
 
 if __name__ == '__main__':
-    config_path = r'/content/drive/MyDrive/SAITS-master/configs/PhysioNet2012_MRNN_best.ini'
+    config_path = "/"
     test_mode = False
     param_searching_mode = True
 
