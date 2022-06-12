@@ -10,6 +10,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import torch
 from sklearn import metrics
+sys.path.append('../data')
 
 class DataGetter(Dataset):
     def __init__(self, imputed_data, labels):
