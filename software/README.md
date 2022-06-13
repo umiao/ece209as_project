@@ -1,3 +1,7 @@
+**Google Drive and Colab**
+
+We use the google drive to store the data and codes and run some .ipynb code files with colab.
+
 **Imputation and Classification model codes reference:**
 
 [Du, Wenjie, David Côté, and Yan Liu. "SAITS: Self-Attention-based Imputation for Time Series." arXiv preprint arXiv:2202.08516 (2022).](https://github.com/WenjieDu/SAITS)
