@@ -12,8 +12,3 @@ Use the folders as follows:
 We use the google drive to store the data and codes and run some .ipynb code files with colab.
 
 - [209AS project](https://drive.google.com/drive/folders/1-8JF-hG9DmKItDK5O7lk4-30raSYFWeZ?usp=sharing)
-- [Final Presentation Slides](https://github.com/umiao/ece209as_project/blob/main/docs/final_slides.pdf)
-- [Final Report](https://github.com/umiao/ece209as_project/blob/main/docs/report.md)
-
-
-
