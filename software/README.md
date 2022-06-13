@@ -4,9 +4,12 @@ We use the google drive to store the data and codes and run some .ipynb code fil
 
 [209AS project](https://drive.google.com/drive/folders/1-8JF-hG9DmKItDK5O7lk4-30raSYFWeZ?usp=sharing)
 
-**Imputation and Classification model codes reference:**
+**Imputation and Classification models and codes reference:**
 
-[Du, Wenjie, David Côté, and Yan Liu. "SAITS: Self-Attention-based Imputation for Time Series." arXiv preprint arXiv:2202.08516 (2022).](https://github.com/WenjieDu/SAITS)
+- [SAITS: Du, Wenjie, David Côté, and Yan Liu. "SAITS: Self-Attention-based Imputation for Time Series." arXiv preprint arXiv:2202.08516 (2022).](https://arxiv.org/abs/2202.08516)
+- [BRITS: Cao, Wei, et al. "Brits: Bidirectional recurrent imputation for time series." Advances in neural information processing systems 31 (2018).](https://proceedings.neurips.cc/paper/2018/hash/734e6bfcd358e25ac1db0a4241b95651-Abstract.html)
+- [M-RNN: Yoon, Jinsung, William R. Zame, and Mihaela van der Schaar. "Estimating missing data in temporal data streams using multi-directional recurrent neural networks." IEEE Transactions on Biomedical Engineering 66.5 (2018): 1477-1490.](https://ieeexplore.ieee.org/abstract/document/8485748)
+
 
 **Classification.py Walking Through:**
 
