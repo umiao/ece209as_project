@@ -105,24 +105,27 @@ Another potential impact lies in the contribution to the open-source community. 
 ## Challenges:
 
 - Whether the dataset can be processed correctly,
-- Whether those previous classical models can be implemented correctly.
-- Whether the performance under the same dataset will be significantly different from the past. 
-- Whether the design of the different missing patterns is reasonable and whether a reasonable and meaningful downstream task can be found for each different dataset to evaluate the data imputation performance.
+- Whether we can design an efficient and reliable encoding and clustering model.
+- Whether the performance under the same dataset will be significantly different from the baselines. 
+- Whether a reasonable and meaningful downstream task can be found to evaluate the data imputation performance.
 
 ## Requirements for Success:
 
-First, we have to classify the datasets we will use, the patterns of missing data we will realize and the downstream tasks we will evaluate, which means we need to be able to read papers, collect information and work together well. Then we have to properly design an encoding, clustering and voting algorithm to realize our ideas.
+- We have to classify the datasets we will use, the patterns of missing data we will realize and the downstream tasks we will evaluate, which means we need to be able to read papers, collect information and work together well.
+- We have to properly design an encoding, clustering and voting algorithm to realize our ideas.
+- We have to preprocess all the data we plan to use into the univaraite data with same length.
 
 ## Metrics of Success:
 
-Use classification/prediction to evaluate the models. The main metric is AUC score.
+Use classification/prediction to evaluate the models. The main metric are ROC AUC, PR AUC, F1 score and time efficiency.
 
 # 2. Related Work
 
 ### 2.a. Papers
 
-* **M-RNN<sup>[2]</sup>:** "Estimating missing data in temporal data streams using multi-directional recurrent neural networks."
-* **BRITS<sup>[3]</sup>:** "Brits: Bidirectional recurrent imputation for time series."
+- [SAITS: Du, Wenjie, David Côté, and Yan Liu. "SAITS: Self-Attention-based Imputation for Time Series." arXiv preprint arXiv:2202.08516 (2022).](https://arxiv.org/abs/2202.08516)
+- [BRITS: Cao, Wei, et al. "Brits: Bidirectional recurrent imputation for time series." Advances in neural information processing systems 31 (2018).](https://proceedings.neurips.cc/paper/2018/hash/734e6bfcd358e25ac1db0a4241b95651-Abstract.html)
+- [M-RNN: Yoon, Jinsung, William R. Zame, and Mihaela van der Schaar. "Estimating missing data in temporal data streams using multi-directional recurrent neural networks." IEEE Transactions on Biomedical Engineering 66.5 (2018): 1477-1490.](https://ieeexplore.ieee.org/abstract/document/8485748)
 
 ### 2.b. Datasets
 
